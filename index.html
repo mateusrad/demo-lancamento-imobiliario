@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Residencial Vila Aurora | Demonstração de landing page</title>
+  <meta name="description" content="Página de demonstração: lançamento fictício de apartamentos de 2 e 3 dormitórios, 58 e 74 m², com piscina, academia e espaço pet. Projeto de portfólio de Mateus Simões.">
+  <meta name="theme-color" content="#2A3222">
+
+  <!-- Open Graph (prévia ao compartilhar no WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Residencial Vila Aurora (demonstração)">
+  <meta property="og:description" content="Landing page de demonstração para lançamento imobiliário. Empreendimento fictício criado para portfólio.">
+  <meta property="og:url" content="https://mateusrad.github.io/demo-lancamento-imobiliario/">
+  <meta property="og:image" content="https://mateusrad.github.io/demo-lancamento-imobiliario/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Fachada de prédio residencial ao entardecer">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fontes carregadas sem bloquear a renderização (media="print" e troca para "all" quando terminar) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Manrope:wght@400;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Manrope:wght@400;700&display=swap"></noscript>
+
+  <!-- Pré-carrega a foto do hero (a maior imagem da primeira tela) -->
+  <link rel="preload" as="image" type="image/webp" href="img/hero-800.webp" media="(max-width: 767px)" fetchpriority="high">
+  <link rel="preload" as="image" type="image/webp" href="img/hero-1920.webp" media="(min-width: 768px)" fetchpriority="high">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- 1. Aviso de demonstração -->
+  <aside class="demo-bar" aria-label="Aviso de demonstração">
+    Página de demonstração. Empreendimento fictício criado para portfólio.
+  </aside>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#topo" aria-label="Vila Aurora, voltar ao topo">Vila Aurora</a>
+      <nav class="site-nav" aria-label="Seções da página">
+        <ul>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#plantas">Plantas</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--small btn--light" href="#contato">Contato</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- 2. Hero -->
+    <section class="hero" id="topo" aria-labelledby="hero-titulo">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/hero-1920.webp" width="1920" height="1280">
+        <img class="hero__img" src="img/hero-800.webp" width="800" height="1300"
+             alt="Fachada de prédio residencial com varandas de vidro ao entardecer"
+             fetchpriority="high" decoding="async">
+      </picture>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <span class="badge">Lançamento</span>
+        <h1 id="hero-titulo" class="hero__title">Residencial <br>Vila Aurora</h1>
+        <p class="hero__lead">Viva perto de tudo, com lazer completo e a calma de um bairro arborizado.</p>
+        <ul class="hero__facts" aria-label="Resumo do empreendimento">
+          <li><strong>2 e 3</strong> dormitórios</li>
+          <li><strong>58 e 74</strong> m²</li>
+          <li><strong>1 ou 2</strong> vagas</li>
+        </ul>
+        <a class="btn btn--primary" href="#contato">Quero saber mais</a>
+        <p class="hero__place">Bairro Jardim Central</p>
+      </div>
+    </section>
+
+    <!-- 3. Diferenciais -->
+    <section class="section" id="diferenciais" aria-labelledby="diferenciais-titulo">
+      <div class="container">
+        <p class="eyebrow">Diferenciais</p>
+        <h2 id="diferenciais-titulo" class="section__title">Lazer completo sem sair de casa</h2>
+        <ul class="features">
+          <li class="feature reveal">
+            <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 18c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 21c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M8 15V5a2 2 0 0 1 4 0M16 15V5a2 2 0 0 0-4 0M8 9h8M8 12h8"/></svg>
+            <h3>Piscina</h3>
+            <p>Piscina adulto e infantil com deck e espreguiçadeiras.</p>
+          </li>
+          <li class="feature reveal">
+            <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7v10M3 9v6M18 7v10M21 9v6M6 12h12"/></svg>
+            <h3>Academia</h3>
+            <p>Espaço equipado para treinar a qualquer hora do dia.</p>
+          </li>
+          <li class="feature reveal">
+            <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21h14M12 21v-8M7 3h10l-1 6a4 4 0 0 1-8 0L7 3Z"/></svg>
+            <h3>Salão de festas</h3>
+            <p>Ambiente decorado com cozinha de apoio para receber bem.</p>
+          </li>
+          <li class="feature reveal">
+            <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V9h6v12M4 13h6M4 17h6M10 9c4 0 5 5 10 12M3 9l4-5 4 5"/></svg>
+            <h3>Playground</h3>
+            <p>Área segura e cercada para as crianças brincarem.</p>
+          </li>
+          <li class="feature reveal">
+            <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2"/><circle cx="9.5" cy="5.5" r="2"/><circle cx="14.5" cy="5.5" r="2"/><circle cx="19" cy="10" r="2"/><path d="M12 11c-3 0-6 4.5-6 7a3 3 0 0 0 3 3c1.2 0 2-.6 3-.6s1.8.6 3 .6a3 3 0 0 0 3-3c0-2.5-3-7-6-7Z"/></svg>
+            <h3>Espaço pet</h3>
+            <p>Área gramada com obstáculos para o seu pet gastar energia.</p>
+          </li>
+          <li class="feature reveal">
+            <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 12h9V3M12 12v9M16 12h5"/></svg>
+            <h3>Plantas inteligentes</h3>
+            <p>2 dormitórios com 58 m² ou 3 dormitórios com 74 m², com suíte.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. Galeria -->
+    <section class="section section--tint" id="galeria" aria-labelledby="galeria-titulo">
+      <div class="container">
+        <p class="eyebrow">Galeria</p>
+        <h2 id="galeria-titulo" class="section__title">Cada detalhe pensado para o seu dia a dia</h2>
+        <p class="section__note">Imagens ilustrativas. Toque em uma foto para ampliar.</p>
+        <!-- Sem JS, cada link abre a foto grande; com JS, abre o lightbox -->
+        <ul class="gallery">
+          <li><a class="gallery__item reveal" href="img/fachada-full.webp" data-caption="Fachada">
+            <img src="img/fachada-600.webp" width="600" height="450" loading="lazy" decoding="async" alt="Prédio residencial bege com árvore em frente"></a></li>
+          <li><a class="gallery__item reveal" href="img/piscina-full.webp" data-caption="Piscina com deck e espreguiçadeiras">
+            <img src="img/piscina-600.webp" width="600" height="450" loading="lazy" decoding="async" alt="Piscina com espreguiçadeiras ao lado do prédio"></a></li>
+          <li><a class="gallery__item reveal" href="img/academia-full.webp" data-caption="Academia">
+            <img src="img/academia-600.webp" width="600" height="450" loading="lazy" decoding="async" alt="Academia com aparelhos de musculação e iluminação moderna"></a></li>
+          <li><a class="gallery__item reveal" href="img/sala-full.webp" data-caption="Sala de estar">
+            <img src="img/sala-600.webp" width="600" height="450" loading="lazy" decoding="async" alt="Sala de estar com sofá verde e paredes claras"></a></li>
+          <li><a class="gallery__item reveal" href="img/cozinha-full.webp" data-caption="Cozinha integrada">
+            <img src="img/cozinha-600.webp" width="600" height="450" loading="lazy" decoding="async" alt="Cozinha com ilha central e janela ampla"></a></li>
+          <li><a class="gallery__item reveal" href="img/quarto-full.webp" data-caption="Dormitório">
+            <img src="img/quarto-600.webp" width="600" height="450" loading="lazy" decoding="async" alt="Quarto iluminado com cama de casal e quadros na parede"></a></li>
+          <li><a class="gallery__item reveal" href="img/playground-full.webp" data-caption="Playground">
+            <img src="img/playground-600.webp" width="600" height="450" loading="lazy" decoding="async" alt="Playground colorido em frente a um prédio"></a></li>
+          <li><a class="gallery__item reveal" href="img/pet-full.webp" data-caption="Espaço pet">
+            <img src="img/pet-600.webp" width="600" height="450" loading="lazy" decoding="async" alt="Cachorro correndo e pulando em um gramado"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. Plantas (SVG desenhado para a demo; as áreas dos cômodos somam a área privativa) -->
+    <section class="section" id="plantas" aria-labelledby="plantas-titulo">
+      <div class="container">
+        <p class="eyebrow">Plantas</p>
+        <h2 id="plantas-titulo" class="section__title">Escolha a planta ideal para a sua família</h2>
+
+        <div class="tabs" role="tablist" aria-label="Tipos de planta">
+          <button class="tabs__tab" type="button" role="tab" id="tab-2d" aria-controls="painel-2d" aria-selected="true">2 dormitórios</button>
+          <button class="tabs__tab" type="button" role="tab" id="tab-3d" aria-controls="painel-3d" aria-selected="false" tabindex="-1">3 dormitórios</button>
+        </div>
+
+        <div class="plan" role="tabpanel" id="painel-2d" aria-labelledby="tab-2d">
+          <button class="plan__zoom" type="button" aria-label="Ampliar planta de 2 dormitórios">
+            <svg class="plan__svg" viewBox="0 0 528 483" role="img" aria-labelledby="planta2-t">
+            <title id="planta2-t">Planta ilustrativa do apartamento de 2 dormitórios, 58 m²</title>
+            <rect class="plan__floor" x="24" y="24" width="480" height="435"/>
+            <rect class="plan__room" x="24" y="24" width="180" height="195"/>
+            <text class="plan__name" x="114" y="113.5">Dormitório 1</text>
+            <text class="plan__area" x="114" y="129.5">9,75 m²</text>
+            <rect class="plan__room" x="204" y="24" width="105" height="120"/>
+            <text class="plan__name" x="256.5" y="76">Banho</text>
+            <text class="plan__area" x="256.5" y="92">3,50 m²</text>
+            <rect class="plan__room" x="204" y="144" width="105" height="75"/>
+            <text class="plan__name" x="256.5" y="173.5">Circulação</text>
+            <text class="plan__area" x="256.5" y="189.5">2,19 m²</text>
+            <rect class="plan__room" x="309" y="24" width="195" height="195"/>
+            <text class="plan__name" x="406.5" y="113.5">Dormitório 2</text>
+            <text class="plan__area" x="406.5" y="129.5">10,56 m²</text>
+            <rect class="plan__room" x="24" y="219" width="330" height="150"/>
+            <text class="plan__name" x="189" y="286">Estar / jantar</text>
+            <text class="plan__area" x="189" y="302">13,75 m²</text>
+            <rect class="plan__room" x="354" y="219" width="150" height="150"/>
+            <text class="plan__name" x="429" y="286">Cozinha</text>
+            <text class="plan__area" x="429" y="302">6,25 m²</text>
+            <rect class="plan__room plan__room--out" x="24" y="369" width="330" height="90"/>
+            <text class="plan__name" x="189" y="406">Varanda gourmet</text>
+            <text class="plan__area" x="189" y="422">8,25 m²</text>
+            <rect class="plan__room" x="354" y="369" width="150" height="90"/>
+            <text class="plan__name" x="429" y="406">Serviço</text>
+            <text class="plan__area" x="429" y="422">3,75 m²</text>
+            <rect class="plan__walls" x="24" y="24" width="480" height="435"/>
+            </svg>
+            <span class="plan__hint" aria-hidden="true">Toque para ampliar</span>
+          </button>
+          <div class="plan__info">
+            <p class="plan__size">58 m²</p>
+            <p class="plan__sub">área privativa</p>
+            <ul class="plan__specs">
+              <li>2 dormitórios</li>
+              <li>1 banheiro</li>
+              <li>Varanda gourmet</li>
+              <li>1 vaga de garagem</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="plan" role="tabpanel" id="painel-3d" aria-labelledby="tab-3d" hidden>
+          <button class="plan__zoom" type="button" aria-label="Ampliar planta de 3 dormitórios">
+            <svg class="plan__svg" viewBox="0 0 603 528" role="img" aria-labelledby="planta3-t">
+            <title id="planta3-t">Planta ilustrativa do apartamento de 3 dormitórios, 74 m²</title>
+            <rect class="plan__floor" x="24" y="24" width="555" height="480"/>
+            <rect class="plan__room" x="24" y="24" width="195" height="195"/>
+            <text class="plan__name" x="121.5" y="113.5">Suíte</text>
+            <text class="plan__area" x="121.5" y="129.5">10,56 m²</text>
+            <rect class="plan__room" x="219" y="24" width="90" height="120"/>
+            <text class="plan__name" x="264" y="68">Banho</text>
+            <text class="plan__name" x="264" y="84">suíte</text>
+            <text class="plan__area" x="264" y="100">3,00 m²</text>
+            <rect class="plan__room" x="309" y="24" width="90" height="120"/>
+            <text class="plan__name" x="354" y="68">Banho</text>
+            <text class="plan__name" x="354" y="84">social</text>
+            <text class="plan__area" x="354" y="100">3,00 m²</text>
+            <rect class="plan__room" x="219" y="144" width="180" height="75"/>
+            <text class="plan__name" x="309" y="173.5">Circulação</text>
+            <text class="plan__area" x="309" y="189.5">3,75 m²</text>
+            <rect class="plan__room" x="399" y="24" width="180" height="195"/>
+            <text class="plan__name" x="489" y="113.5">Dormitório 2</text>
+            <text class="plan__area" x="489" y="129.5">9,75 m²</text>
+            <rect class="plan__room" x="24" y="219" width="270" height="195"/>
+            <text class="plan__name" x="159" y="308.5">Estar / jantar</text>
+            <text class="plan__area" x="159" y="324.5">14,62 m²</text>
+            <rect class="plan__room" x="294" y="219" width="105" height="195"/>
+            <text class="plan__name" x="346.5" y="308.5">Cozinha</text>
+            <text class="plan__area" x="346.5" y="324.5">5,69 m²</text>
+            <rect class="plan__room" x="399" y="219" width="180" height="195"/>
+            <text class="plan__name" x="489" y="308.5">Dormitório 3</text>
+            <text class="plan__area" x="489" y="324.5">9,75 m²</text>
+            <rect class="plan__room plan__room--out" x="24" y="414" width="375" height="90"/>
+            <text class="plan__name" x="211.5" y="451">Varanda gourmet</text>
+            <text class="plan__area" x="211.5" y="467">9,38 m²</text>
+            <rect class="plan__room" x="399" y="414" width="180" height="90"/>
+            <text class="plan__name" x="489" y="451">Serviço</text>
+            <text class="plan__area" x="489" y="467">4,50 m²</text>
+            <rect class="plan__walls" x="24" y="24" width="555" height="480"/>
+            </svg>
+            <span class="plan__hint" aria-hidden="true">Toque para ampliar</span>
+          </button>
+          <div class="plan__info">
+            <p class="plan__size">74 m²</p>
+            <p class="plan__sub">área privativa</p>
+            <ul class="plan__specs">
+              <li>3 dormitórios, sendo 1 suíte</li>
+              <li>2 banheiros</li>
+              <li>Varanda gourmet</li>
+              <li>2 vagas de garagem</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="section__note">Plantas ilustrativas, sem escala. Medidas aproximadas, arredondadas para duas casas decimais.</p>
+      </div>
+    </section>
+
+    <!-- 6. Localização -->
+    <section class="section section--tint" id="localizacao" aria-labelledby="localizacao-titulo">
+      <div class="container location">
+        <div>
+          <p class="eyebrow">Localização</p>
+          <h2 id="localizacao-titulo" class="section__title">Tudo o que você precisa a poucos passos</h2>
+          <p class="location__address">Rua das Acácias, 120, Bairro Jardim Central (endereço fictício)</p>
+          <ul class="places">
+            <li><span class="places__name">Supermercado</span> <span class="places__dist">300 m · 4 min a pé</span></li>
+            <li><span class="places__name">Escola de ensino fundamental</span> <span class="places__dist">500 m · 6 min a pé</span></li>
+            <li><span class="places__name">Parque com pista de caminhada</span> <span class="places__dist">700 m · 9 min a pé</span></li>
+            <li><span class="places__name">Farmácia</span> <span class="places__dist">200 m · 3 min a pé</span></li>
+            <li><span class="places__name">Unidade de saúde</span> <span class="places__dist">1,2 km · 4 min de carro</span></li>
+            <li><span class="places__name">Ponto de ônibus</span> <span class="places__dist">100 m · 1 min a pé</span></li>
+          </ul>
+        </div>
+        <figure class="location__map">
+          <!-- loading="lazy": o mapa só carrega quando o visitante chega perto desta seção -->
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-47.0700%2C-22.9150%2C-47.0450%2C-22.8950&amp;layer=mapnik"
+            title="Mapa ilustrativo da região (OpenStreetMap)"
+            loading="lazy"
+            referrerpolicy="no-referrer"></iframe>
+          <figcaption>Mapa ilustrativo. O empreendimento e o endereço são fictícios. © colaboradores do OpenStreetMap.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 7. Formulário de contato -->
+    <section class="section section--dark" id="contato" aria-labelledby="contato-titulo">
+      <div class="container contact">
+        <div class="contact__intro">
+          <p class="eyebrow eyebrow--light">Contato</p>
+          <h2 id="contato-titulo" class="section__title section__title--light">Garanta condições especiais de lançamento</h2>
+          <p>Deixe seus dados e um corretor entra em contato para apresentar plantas, valores e formas de pagamento.</p>
+        </div>
+
+        <!--
+          MODO DEMONSTRAÇÃO: o envio é interceptado no js/main.js e nada sai do navegador.
+
+          Para ligar a um serviço real quando for para cliente, escolha UMA opção:
+
+          1) FormSubmit (mais simples, sem backend; os contatos chegam por e-mail):
+             - Troque a abertura do form por:
+               <form class="form" id="form-contato" action="https://formsubmit.co/EMAIL_DO_CORRETOR" method="POST" novalidate>
+             - Acrescente dentro do form:
+               <input type="hidden" name="_subject" value="Novo contato: Vila Aurora">
+               <input type="hidden" name="_next" value="https://SEU-SITE/obrigado.html">
+               <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">  (anti-spam)
+             - No js/main.js, quando a validação passar, chame form.submit() em vez de mostrar o sucesso simulado.
+             - No primeiro envio, o FormSubmit manda um e-mail de ativação para o corretor confirmar.
+
+          2) Firebase (Firestore), se a cliente quiser um painel com os contatos:
+             - Crie o projeto no console do Firebase e um app Web; copie o firebaseConfig (ele não é segredo,
+               mas a proteção vem das regras do Firestore).
+             - No js/main.js, quando a validação passar:
+                 import { getFirestore, collection, addDoc, serverTimestamp } from 'firebase/firestore';
+                 await addDoc(collection(db, 'contatos'), { ...dados, criadoEm: serverTimestamp() });
+             - Regras do Firestore: permitir só "create" na coleção contatos (com validação de campos)
+               e leitura apenas para usuários autenticados (o corretor). Nunca deixe leitura pública.
+
+          Em qualquer opção, inclua um aviso de privacidade (LGPD) dizendo para que os dados serão usados.
+        -->
+        <form class="form" id="form-contato" novalidate>
+          <div class="form__field">
+            <label for="nome">Nome completo</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required aria-describedby="nome-erro">
+            <p class="form__error" id="nome-erro"></p>
+          </div>
+
+          <div class="form__field">
+            <label for="telefone">Telefone com DDD</label>
+            <input id="telefone" name="telefone" type="tel" inputmode="numeric" autocomplete="tel-national"
+                   placeholder="(11) 98765-4321" maxlength="15" required aria-describedby="telefone-erro">
+            <p class="form__error" id="telefone-erro"></p>
+          </div>
+
+          <div class="form__field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-erro">
+            <p class="form__error" id="email-erro"></p>
+          </div>
+
+          <fieldset class="form__field form__choice" aria-describedby="interesse-erro">
+            <legend>Tenho interesse em</legend>
+            <label class="choice"><input type="radio" name="interesse" value="2 dormitórios" required> 2 dormitórios (58 m²)</label>
+            <label class="choice"><input type="radio" name="interesse" value="3 dormitórios"> 3 dormitórios (74 m²)</label>
+            <p class="form__error" id="interesse-erro"></p>
+          </fieldset>
+
+          <p class="form__privacy">Nesta demonstração nenhum dado é enviado ou armazenado.</p>
+
+          <button class="btn btn--primary form__submit" type="submit">Quero receber o contato</button>
+        </form>
+
+        <div class="form-success" id="form-sucesso" tabindex="-1" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>
+          <h3>Mensagem recebida!</h3>
+          <p>Obrigado, <span id="sucesso-nome"></span>. Na versão real, um corretor entraria em contato em breve.</p>
+          <p class="form__privacy">Demonstração: nenhum dado saiu do seu navegador.</p>
+          <button class="btn btn--light" type="button" id="form-novo">Enviar outro contato</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Rodapé -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <p class="brand brand--footer">Vila Aurora</p>
+        <p>Realização: Ventara Incorporadora (empresa fictícia).</p>
+      </div>
+      <p class="site-footer__demo">
+        Página de demonstração. Empreendimento, empresa, imagens de projeto e informações são fictícios
+        e não representam oferta real. Fotos ilustrativas do Unsplash.
+      </p>
+      <p class="site-footer__credit">
+        Desenvolvido por
+        <a href="https://mateusrad.github.io/portfolio/" target="_blank" rel="noopener">Mateus Simões<span class="sr-only"> (abre em nova aba)</span></a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox (galeria e plantas). <dialog> já traz foco preso, tecla Esc e fundo inativo -->
+  <dialog class="lightbox" id="lightbox" aria-label="Visualizador de imagens">
+    <figure class="lightbox__figure">
+      <div class="lightbox__media"></div>
+      <figcaption class="lightbox__caption" aria-live="polite" aria-atomic="true"><span class="lightbox__text"></span> <span class="lightbox__counter"></span></figcaption>
+    </figure>
+    <button class="lightbox__btn lightbox__close" type="button" aria-label="Fechar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <button class="lightbox__btn lightbox__prev" type="button" aria-label="Foto anterior">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <button class="lightbox__btn lightbox__next" type="button" aria-label="Próxima foto">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </dialog>
+
+  <!-- Botão de WhatsApp (fixo) -->
+  <!--
+    VERSÃO REAL: troque o <button> por um link, com o número do corretor (DDI 55 + DDD + número, só dígitos)
+    e a mensagem codificada com encodeURIComponent:
+    <a class="whatsapp" href="https://wa.me/55NUMERO?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20o%20Vila%20Aurora."
+       target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">...</a>
+  -->
+  <button class="whatsapp" type="button" id="whatsapp-btn" aria-label="Conversar no WhatsApp (demonstração)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a4.5 4.5 0 0 1-2.3-2.3l.8-1-1-2L9 8.5Z"/></svg>
+  </button>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <p>Na versão real, este botão abre uma conversa no WhatsApp do corretor.</p>
+    <button type="button" class="toast__close" aria-label="Fechar aviso">&times;</button>
+  </div>
+
+  <script src="js/validacao.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

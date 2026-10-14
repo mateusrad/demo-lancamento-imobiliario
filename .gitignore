@@ -1,0 +1,21 @@
+# Material gerado para revisão externa (repete o que já está no Git)
+docs/revisoes/
+
+# Variáveis de ambiente (se um dia o projeto usar)
+.env
+
+# Dados de clientes (LGPD): nunca versionar
+*.xlsx
+*.csv
+
+# Sistema
+Thumbs.db
+.DS_Store
+
+# Configuração local do Claude Code (tem caminho absoluto do Windows)
+.claude/
+
+# Arquivos internos de trabalho (ficam só no computador, fora do repositório público)
+CLAUDE.md
+PROGRESSO.md
+REVISOES.md

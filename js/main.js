@@ -113,7 +113,7 @@
   // Ao fechar, devolve o foco para o elemento que abriu o lightbox
   lightbox.addEventListener('close', function () {
     lbMedia.innerHTML = '';
-    lbMedia.classList.toggle('lightbox__media--plan', !item.src);
+    lbMedia.classList.remove('lightbox__media--plan');
     if (lbOpener) lbOpener.focus();
   });
 
